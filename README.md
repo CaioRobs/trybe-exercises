@@ -1,4 +1,4 @@
- Trybe - Exercícios
+# Trybe - Exercícios
 
 Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/caiorvieira/)__ durante minha tragetória na Trybe. :rocket:
 
