@@ -1,6 +1,6 @@
 Parte 1 - Instalação e configuração
 Vamos começar realizando a instalação e configuração do Git . Siga o passo a passo para deixar o Git pronto em seu ambiente.
-Instalação
+Instalação:
 Linux
 Para instalar o Git abra o seu terminal e digite o seguinte comando:
 Copiar
