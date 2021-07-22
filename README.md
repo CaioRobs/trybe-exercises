@@ -17,7 +17,7 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [x] 2.2 - Git & GitHub - Entendendo os comandos
 - [x] 2.3 - Internet - Entendendo como ela funciona
 
-##### Bloco 3: [Introdução à HTML e CSS]
+##### Bloco 3: [Introdução à HTML e CSS](https://github.com/CaioRobs/trybe_exercises/tree/master/01_fundamentos/03bloco_html_css/)
 - [ ] 3.1 - Introdução - HTML & CSS
 - [ ] 3.1 - HTML & CSS - Estruturas de página
 - [ ] 3.2 - HTML & CSS - Primeiros passos em CSS
