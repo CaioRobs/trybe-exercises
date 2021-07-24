@@ -39,27 +39,26 @@ li em {
     background-color: pink;
 }
 
-.stack:hover {
+.link:hover {
     font-weight: bold;
+}
+
+.stack:hover {
     color: orange;
 }
 
 .w3:hover {
-    font-weight: bold;
     color: green;
 }
 
 .mdn:hover {
-    font-weight: bold;
     color: black;
 }
 
 .devdocs:hover {
-    font-weight: bold;
     color: yellow;
 }
 
 .trybe:hover {
-    font-weight: bold;
     color: green;
 }
