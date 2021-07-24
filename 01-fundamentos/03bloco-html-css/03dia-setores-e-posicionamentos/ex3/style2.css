@@ -1,0 +1,33 @@
+div:hover {
+    border: 1px solid black;
+}
+
+div:nth-of-type(1) {
+    background-color: greenyellow;
+    text-decoration: overline;
+}
+
+div:nth-of-type(2) {
+    background-color: burlywood;
+    text-decoration: line-through;
+}
+
+div:nth-of-type(3) {
+    background-color: yellow;
+    text-decoration: underline;
+    height: 50px;
+}
+
+div:nth-of-type(4) {
+    background-color: aqua;
+    text-decoration: underline overline;
+}
+
+div:nth-of-type(5) {
+    background-color: palevioletred;
+    text-decoration: underline overline line-through;
+}
+
+div:nth-of-type(odd) {
+    font-style: italic;
+}
