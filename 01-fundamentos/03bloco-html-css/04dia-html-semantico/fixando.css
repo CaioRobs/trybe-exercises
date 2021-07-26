@@ -1,5 +1,13 @@
+		body {
+			text-align: center;
+		}
+
 		h1 {
 			text-align: center;
+		}
+
+		ul {
+			list-style: none;
 		}
 
 		.first {
@@ -8,6 +16,8 @@
 			height: 50px;
 			text-align: center;
 			width: 200px;
+			display: block;
+			margin: auto;
 		}
 
 		.second {
@@ -16,6 +26,8 @@
 			height: 50px;
 			text-align: center;
 			width: 300px;
+			display: inline-block;
+			margin: auto;
 		}
 
 		.third {
@@ -24,4 +36,6 @@
 			height: 50px;
 			text-align: center;
 			width: 300px;
+			display: inline-block;
+			margin: auto;
 		}
