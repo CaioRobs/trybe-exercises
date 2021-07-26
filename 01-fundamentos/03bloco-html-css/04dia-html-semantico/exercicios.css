@@ -1,3 +1,11 @@
+body {
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
 table,
 th,
 td {
@@ -13,4 +21,16 @@ table {
 th,
 td {
 	background-color: aliceblue;
+}
+
+.nav-bar {
+	background-color: aquamarine;
+	text-align: center;
+}
+
+.nav-bar li {
+	display: inline-block;
+	width: fit-content;
+	margin: 20px;
+
 }
