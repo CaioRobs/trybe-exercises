@@ -1,0 +1,78 @@
+body {
+	border: 2px solid black;
+	border-radius: 2em;
+	margin: .5em;
+}
+
+h1,
+h4 {
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+	padding: .75em;
+}
+
+.left {
+	width: 50%;
+	float: left;
+	margin-top: 3em;
+}
+
+aside {
+	width: fit-content;
+	float: right;
+	position: relative;
+	right: 2.5em;
+	top: 1em;
+}
+
+.section-2 {
+	clear: both;
+}
+
+ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	text-align: center;
+}
+
+table {
+	width: 50%;
+	background-color: aquamarine;
+	padding: .5em;
+	margin: auto;
+}
+
+th,
+td {
+	background-color: aliceblue;
+}
+
+.nav-bar {
+	background-color: aquamarine;
+	text-align: center;
+}
+
+.nav-bar li {
+	display: inline-block;
+	width: fit-content;
+	margin: 20px;
+
+}
+
+.article-title {
+	margin-left: 11em;
+	padding-top: 1.5em;
+}
