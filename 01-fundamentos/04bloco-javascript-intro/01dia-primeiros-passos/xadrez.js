@@ -3,8 +3,8 @@ function print() {
 	console.log(movement);
 }
 
-let pieceName = 'knIGht';
-let movement;
+let pieceName = 'knIGht',
+	movement;
 
 pieceName = pieceName.toUpperCase();
 

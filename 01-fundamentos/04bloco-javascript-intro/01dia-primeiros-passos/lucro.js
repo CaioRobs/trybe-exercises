@@ -5,7 +5,7 @@ const costValue = 100,
 	lucro = sellValue - totalCostValue;
 
 if (costValue < 0 || sellValue < 0) {
-	console.log('error')
+	return console.log('error')
 } else {
-	console.log(lucro * 1000)
+	return console.log(lucro * 1000)
 }
