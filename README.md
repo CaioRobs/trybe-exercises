@@ -26,11 +26,11 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [x] 3.5 - Projeto - Lessons Learned
 
 ##### Bloco 4: [Introdução à JavaScript e Lógica de Programação]
-- [ ] 4.1 - Introdução - JavaScript
-- [ ] 4.1 - JavaScript - Primeiros passos
-- [ ] 4.2 - JavaScript - Array e loop For
-- [ ] 4.3 - JavaScript - Lógica de Programação e Algoritmos
-- [ ] 4.4 - JavaScript - Objetos e funções
+- [x] 4.1 - Introdução - JavaScript
+- [x] 4.1 - JavaScript - Primeiros passos
+- [x] 4.2 - JavaScript - Array e loop For
+- [x] 4.3 - JavaScript - Lógica de Programação e Algoritmos
+- [x] 4.4 - JavaScript - Objetos e funções
 - [ ] 4.5 - Projeto - Playground Functions
 
 ##### Bloco 5: [JavaScript: DOM, Eventos e Web Storage]
