@@ -1,4 +1,4 @@
-const n = 101;
+const n = 11;
 
 
 for (let index = 1; index <= n; index += 2) {

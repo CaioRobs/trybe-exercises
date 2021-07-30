@@ -1,4 +1,4 @@
-const n = 7;
+const n = 11;
 let asteriscos = '';
 
 for (let index = 1; index <= n; index += 2) {
