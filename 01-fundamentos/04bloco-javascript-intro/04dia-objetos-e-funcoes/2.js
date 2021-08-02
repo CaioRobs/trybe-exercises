@@ -93,3 +93,28 @@ function somatoriaAteN(numero) {
 console.log(somatoriaAteN(5))
 
 //7-
+function checkEnding(word, ending) {
+	const newWord = Array.from(word);
+	const newEnding = Array.from(ending);
+	let ehIgual;
+
+	if (newEnding.length > newWord.length) {
+		ehIgual = false;
+		return ehIgual;
+	} else {
+
+		for (let index = 0; index < newEnding.length; index += 1) {
+			if (newEnding[index] === newWord[newWord.length - newEnding.length + index]) {
+				ehIgual = true
+			} else {
+				ehIgual = false;
+				break;
+			}
+		}
+	}
+	return ehIgual;
+}
+
+const word = 'trybe',
+	ending = 'tryb';
+console.log(checkEnding(word, ending));
