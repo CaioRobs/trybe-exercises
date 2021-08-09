@@ -49,32 +49,62 @@
     // - document.getElementById()
     // - document.getElementsByClassName()
     // - document.getElementsByTagName()
+
     // Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-    function changeText() {
+    function findPTags() {
       ps = document.getElementsByTagName('p');
+      return ps;
+    }
+
+    function changeText() {
+      ps = findPTags();
       ps[0].innerText = 'Irure excepteur laborum pariatur nisi ullamco dolore eiusmod Lorem aute qui duis.';
     }
     changeText();
+
     // Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109))
+
     function changeOuterSquareColor() {
       outerSquare = document.getElementsByClassName('main-content')[0];
       outerSquare.style.backgroundColor = "rgb(76, 164, 109)";
     }
     changeOuterSquareColor();
+
     // Crie uma função que mude a cor do quadrado vermelho para branco.
+
     function changeinnerSquareColor() {
       innerSquare = document.getElementsByClassName('center-content')[0];
       innerSquare.style.backgroundColor = "white";
     }
     changeinnerSquareColor();
+
     // Crie uma função que corrija o texto da tag <h1>.
+
     function correctsH1Text() {
       textH1 = document.getElementsByTagName('h1')[0];
       textH1.innerText = "Exercício 5.1 - JavaScript";
     }
     correctsH1Text();
+
     // Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
+    function capitalizePTags() {
+      ps = findPTags();
+      for (let index = 0; index < ps.length; index += 1) {
+        ps[index].innerText = ps[index].innerText.toUpperCase();
+      }
+    }
+    capitalizePTags();
+
     // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+
+    function logPTags() {
+      ps = findPTags();
+      for (let index = 0; index < ps.length; index += 1) {
+        console.log(ps[index].innerText);
+      }
+    }
+    logPTags();
   </script>
 </body>
 
