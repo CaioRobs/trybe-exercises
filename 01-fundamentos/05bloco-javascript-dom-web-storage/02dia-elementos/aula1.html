@@ -9,4 +9,41 @@
     <section id="terceiroFilho"></section>
     <section id="quartoEUltimoFilho"></section>
   </section>
+  <script>
+    const elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta')
+    console.log(elementoOndeVoceEsta)
+
+    const pai = elementoOndeVoceEsta.parentNode
+    pai.style.color = "darkgreen"
+
+    const primeiroFilhoDoFilho = document.querySelector("#primeiroFilhoDoFilho")
+    primeiroFilhoDoFilho.innerText = "Minim quis sit est exercitation incididunt qui."
+
+    const primeiroFilho = pai.firstElementChild
+    console.log(primeiroFilho)
+
+    const primeiroFilho1 = elementoOndeVoceEsta.previousElementSibling
+    console.log(primeiroFilho1)
+
+    const atencaoText = elementoOndeVoceEsta.nextSibling
+    console.log(atencaoText)
+
+    const terceiroFilho = elementoOndeVoceEsta.nextElementSibling
+    console.log(terceiroFilho)
+
+    const tereceiroFilho1 = pai.lastElementChild.previousElementSibling
+    console.log(tereceiroFilho1)
+  </script>
 </main>
+
+
+<!-- 
+Acesse o elemento elementoOndeVoceEsta . v
+Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele. v
+Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso? v
+Acesse o primeiroFilho a partir de pai . v
+Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta . v
+Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+Agora acesse o terceiroFilho a partir de pai . 
+-->
