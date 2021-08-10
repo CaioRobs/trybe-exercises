@@ -31,8 +31,23 @@
     const terceiroFilho = elementoOndeVoceEsta.nextElementSibling
     console.log(terceiroFilho)
 
-    const tereceiroFilho1 = pai.lastElementChild.previousElementSibling
-    console.log(tereceiroFilho1)
+    const terceiroFilho1 = pai.lastElementChild.previousElementSibling
+    console.log(terceiroFilho1)
+
+    const irmaoElementoOndeEsta = document.createElement("section")
+    pai.appendChild(irmaoElementoOndeEsta)
+    irmaoElementoOndeEsta.id = "irmaoElementoOndeEsta"
+
+    const filhoElementoOndeEsta = document.createElement("section")
+    elementoOndeVoceEsta.appendChild(filhoElementoOndeEsta)
+    filhoElementoOndeEsta.id = "filhoElementoOndeEsta"
+
+    const filhoPrimeiroFilhoDoFilho = document.createElement("section")
+    primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho)
+    filhoPrimeiroFilhoDoFilho.id = "filhoPrimeiroFilhoDoFilho"
+
+    const terceiroFilho2 = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling
+    console.log(terceiroFilho2)
   </script>
 </main>
 
@@ -43,14 +58,14 @@ Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele. v
 Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso? v
 Acesse o primeiroFilho a partir de pai . v
 Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta . v
-Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
-Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
-Agora acesse o terceiroFilho a partir de pai . 
+Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta . v
+Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta . v
+Agora acesse o terceiroFilho a partir de pai .  v
 -->
 
 <!-- 2
-Crie um irmão para elementoOndeVoceEsta .
-Crie um filho para elementoOndeVoceEsta .
-Crie um filho para primeiroFilhoDoFilho .
-A partir desse filho criado, acesse terceiroFilho . 
+Crie um irmão para elementoOndeVoceEsta . v
+Crie um filho para elementoOndeVoceEsta . v 
+Crie um filho para primeiroFilhoDoFilho . v
+A partir desse filho criado, acesse terceiroFilho . v
 -->
