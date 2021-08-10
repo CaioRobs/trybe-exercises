@@ -54,11 +54,10 @@
       const children = pai.children
       for (let index = 0; index < children.length; index += 1) {
         child = children[index]
-        if (child.id === 'pai' || child.id === 'elementoOndeVoceEsta' || child.id === 'primeiroFilhoDoFilho') {
-          console.log("vou entrar em ", child.id, " e apagar os filhos")
+        childName = child.id
+        if (childName === 'pai' || childName === 'elementoOndeVoceEsta' || childName === 'primeiroFilhoDoFilho') {
           apagaFilhos(child)
         } else {
-          console.log("vou apagar ", child.id)
           child.remove()
           index -= 1
         }
