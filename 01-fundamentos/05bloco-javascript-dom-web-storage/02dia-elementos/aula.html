@@ -11,8 +11,7 @@
   </section>
   <script>
     const elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta')
-    // console.log(elementoOndeVoceEsta)
-
+    
     const pai = elementoOndeVoceEsta.parentNode
     pai.style.color = "darkgreen"
 
@@ -20,20 +19,15 @@
     primeiroFilhoDoFilho.innerText = "Minim quis sit est exercitation incididunt qui."
 
     const primeiroFilho = pai.firstElementChild
-    // console.log(primeiroFilho)
-
+    
     const primeiroFilho1 = elementoOndeVoceEsta.previousElementSibling
-    // console.log(primeiroFilho1)
-
+    
     const atencaoText = elementoOndeVoceEsta.nextSibling
-    // console.log(atencaoText)
-
+    
     const terceiroFilho = elementoOndeVoceEsta.nextElementSibling
-    // console.log(terceiroFilho)
-
+    
     const terceiroFilho1 = pai.lastElementChild.previousElementSibling
-    // console.log(terceiroFilho1)
-
+    
     const irmaoElementoOndeEsta = document.createElement("section")
     pai.appendChild(irmaoElementoOndeEsta)
     irmaoElementoOndeEsta.id = "irmaoElementoOndeEsta"
@@ -47,8 +41,7 @@
     filhoPrimeiroFilhoDoFilho.id = "filhoPrimeiroFilhoDoFilho"
 
     const terceiroFilho2 = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling
-    // console.log(terceiroFilho2)
-
+    
 
     function apagaFilhos(pai) {
       const children = pai.children
