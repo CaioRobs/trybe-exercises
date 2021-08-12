@@ -2,21 +2,8 @@ const button = document.getElementById('add-button');
 const input = document.getElementById('phrases-input');
 const list = document.getElementById('phrases-list');
 
-function addPhraseToLocalStorage() {
-  const oldList = JSON.parse(localStorage.getItem('phrases'));
-  const phraseText = input.value;
-  oldList.push(phraseText);
-  localStorage.setItem('phrases', JSON.stringify(oldList));
-  insertPhraseInDOM();
-};
-
-function insertPhraseInDOM() {
-  const phrasesList = JSON.parse(localStorage.getItem('phrases'));
-  const listLength = phrasesList.length - 1;
-  const phraseText = phrasesList[listLength];
-  const phrase = document.createElement('li');
-  phrase.innerText = phraseText;
-  list.appendChild(phrase);
+window.onload = function () {
+  initialRenderization();
 };
 
 function initialRenderization() {
@@ -33,8 +20,25 @@ function initialRenderization() {
   };
 };
 
-button.addEventListener('click', addPhraseToLocalStorage);
+function handleButtonCLick() {
+  addPhraseToLocalStorage();
+  insertPhraseInDOM();
+}
+button.addEventListener('click', handleButtonCLick);
 
-window.onload = function () {
-  initialRenderization();
+
+function addPhraseToLocalStorage() {
+  const oldList = JSON.parse(localStorage.getItem('phrases'));
+  const phraseText = input.value;
+  oldList.push(phraseText);
+  localStorage.setItem('phrases', JSON.stringify(oldList));
+};
+
+function insertPhraseInDOM() {
+  const phrasesList = JSON.parse(localStorage.getItem('phrases'));
+  const listLength = phrasesList.length - 1;
+  const phraseText = phrasesList[listLength];
+  const phrase = document.createElement('li');
+  phrase.innerText = phraseText;
+  list.appendChild(phrase);
 };

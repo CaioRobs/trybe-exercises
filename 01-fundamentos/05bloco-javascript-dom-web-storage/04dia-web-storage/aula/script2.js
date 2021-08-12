@@ -1,6 +1,13 @@
 const button = document.getElementById('add-button');
-const input = document.getElementById('phrase-input');
+const input = document.getElementById('phrases-input');
 const list = document.getElementById('phrases-list');
+
+function handleButtonCLick() {
+  addPhraseToSessionStorage();
+  insertPhraseInDOM();
+}
+button.addEventListener('click', handleButtonCLick);
+
 
 function addPhraseToSessionStorage() {
   if (sessionStorage.getItem('phrases') === null) {
@@ -10,7 +17,6 @@ function addPhraseToSessionStorage() {
   const phraseText = input.value;
   oldList.push(phraseText);
   sessionStorage.setItem('phrases', JSON.stringify(oldList));
-  insertPhraseInDOM();
 };
 
 function insertPhraseInDOM() {
@@ -21,5 +27,3 @@ function insertPhraseInDOM() {
   phrase.innerText = phraseText;
   list.appendChild(phrase);
 };
-
-button.addEventListener('click', addPhraseToSessionStorage);
