@@ -1,3 +1,13 @@
+window.onload = function () {
+  createDaysOfTheWeek();
+  createDays();
+  createBtn("Holidays");
+  createBtn("Fridays");
+  document.getElementById('btn-Holidays').addEventListener('click', handleBtnClick);
+  document.getElementById('btn-Fridays').addEventListener('click', handleBtnClick);
+  addsListenerToDays();
+}
+
 function createDaysOfTheWeek() {
   const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
   const weekDaysList = document.querySelector('.week-days');
@@ -10,10 +20,6 @@ function createDaysOfTheWeek() {
     weekDaysList.appendChild(dayListItem);
   };
 };
-
-createDaysOfTheWeek();
-
-// Escreva seu código abaixo.
 
 function createDays() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
@@ -33,7 +39,6 @@ function createDays() {
     document.getElementById('days').appendChild(currentDay)
   }
 }
-createDays();
 
 function createBtn(dayType) {
   let btn = document.createElement('button');
@@ -41,8 +46,6 @@ function createBtn(dayType) {
   btn.innerText = dayType
   document.querySelector('.buttons-container').appendChild(btn)
 }
-createBtn("Holidays")
-createBtn("Fridays")
 
 function handleBtnClick() {
   const dayType = event.target.id.slice(4);
@@ -67,8 +70,6 @@ function handleBtnClick() {
     }
   }
 }
-document.getElementById('btn-Holidays').addEventListener('click', handleBtnClick)
-document.getElementById('btn-Fridays').addEventListener('click', handleBtnClick)
 
 function addsListenerToDays() {
   const days = document.getElementsByClassName('day')
@@ -77,7 +78,6 @@ function addsListenerToDays() {
     day.addEventListener('mouseleave', unzoomDay)
   }
 }
-addsListenerToDays()
 
 function zoomDay() {
   event.target.style.fontSize = "24px"
