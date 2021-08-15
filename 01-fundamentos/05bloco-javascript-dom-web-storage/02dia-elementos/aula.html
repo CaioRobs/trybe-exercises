@@ -1,0 +1,85 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+  <script>
+    const elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta')
+    
+    const pai = elementoOndeVoceEsta.parentNode
+    pai.style.color = "darkgreen"
+
+    const primeiroFilhoDoFilho = document.querySelector("#primeiroFilhoDoFilho")
+    primeiroFilhoDoFilho.innerText = "Minim quis sit est exercitation incididunt qui."
+
+    const primeiroFilho = pai.firstElementChild
+    
+    const primeiroFilho1 = elementoOndeVoceEsta.previousElementSibling
+    
+    const atencaoText = elementoOndeVoceEsta.nextSibling
+    
+    const terceiroFilho = elementoOndeVoceEsta.nextElementSibling
+    
+    const terceiroFilho1 = pai.lastElementChild.previousElementSibling
+    
+    const irmaoElementoOndeEsta = document.createElement("section")
+    pai.appendChild(irmaoElementoOndeEsta)
+    irmaoElementoOndeEsta.id = "irmaoElementoOndeEsta"
+
+    const filhoElementoOndeEsta = document.createElement("section")
+    elementoOndeVoceEsta.appendChild(filhoElementoOndeEsta)
+    filhoElementoOndeEsta.id = "filhoElementoOndeEsta"
+
+    const filhoPrimeiroFilhoDoFilho = document.createElement("section")
+    primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho)
+    filhoPrimeiroFilhoDoFilho.id = "filhoPrimeiroFilhoDoFilho"
+
+    const terceiroFilho2 = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling
+    
+
+    function apagaFilhos(pai) {
+      const children = pai.children
+      for (let index = 0; index < children.length; index += 1) {
+        child = children[index]
+        childName = child.id
+        if (childName === 'pai' || childName === 'elementoOndeVoceEsta' || childName === 'primeiroFilhoDoFilho') {
+          apagaFilhos(child)
+        } else {
+          child.remove()
+          index -= 1
+        }
+      }
+    }
+
+    const paiDoPai = pai.parentElement
+    apagaFilhos(paiDoPai)
+  </script>
+</main>
+
+
+<!-- 1
+Acesse o elemento elementoOndeVoceEsta . v
+Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele. v
+Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso? v
+Acesse o primeiroFilho a partir de pai . v
+Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta . v
+Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta . v
+Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta . v
+Agora acesse o terceiroFilho a partir de pai .  v
+-->
+
+<!-- 2
+Crie um irmão para elementoOndeVoceEsta . v
+Crie um filho para elementoOndeVoceEsta . v 
+Crie um filho para primeiroFilhoDoFilho . v
+A partir desse filho criado, acesse terceiroFilho . v
+-->
+<!-- 3
+Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho . v
+ -->
