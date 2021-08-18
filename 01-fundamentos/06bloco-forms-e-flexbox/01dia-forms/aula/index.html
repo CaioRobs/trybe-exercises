@@ -10,20 +10,23 @@
 </head>
 
 <body>
-	<p>Login</p>
+	<h1>Login</h1>
 	<form action="" method="GET" enctype="multipart/form-data">
-		<label for="input-email">
+		<div>
+			<label for="input-email">Email:</label>
 			<input type="email" name="email" id="input-email" placeholder="Digite seu email" required autofocus
 				autocomplete="off">
-		</label>
-		<label for="input-senha">
+		</div>
+		<div>
+			<label for="input-senha">Senha: </label>
 			<input type="password" name="senha" id="input-senha" placeholder="Digite sua senha" required>
-		</label>
-		<br>
+		</div>
 		<label for="checkbox-lembre-me">
 			<input type="checkbox" name="lembre-me" id="checkbox-lembre-me">Lembre-me
 		</label>
-		<button type="submit" id="submit-btn">Entrar</button>
+		<div>
+			<button type="submit" id="submit-btn">Entrar</button>
+		</div>
 	</form>
 </body>
 
