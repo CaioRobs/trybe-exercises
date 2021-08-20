@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercícios</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container is-fluid">
+	<form action="" method="get">
+		<div class="box column is-8 is-offset-2">
+
+			<div class="field">
+				<label class="label" for="name">Nome:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="nome" id="name" placeholder="Digite seu nome" maxlength="40"
+						required>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label" for="email">Email:</label>
+				<div class="control">
+					<input class="input is-rounded" type="email" name="email" id="email" placeholder="Digite seu email"
+						maxlength="50" required>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label" for="cpf">CPF:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="cpf" id="cpf" placeholder="Somente números" minlength="11"
+						maxlength="11" required>
+				</div>
+			</div>
+		</div>
+
+		<div class="box column is-8 is-offset-2">
+
+			<div class="field">
+				<label class="label" for="address">Endereço:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="address" id="address" maxlength="200" required>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label" for="city">Cidade:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="city" id="city" maxlength="28" required>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label" for="state">Estado:</label>
+				<div class="control">
+					<div class="select is-rounded">
+						<select name="state" id="state" required>
+							<option value="invalid">Selecione...</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="field">
+				<div class="control">
+					<label class="radio" for="house-type1">
+						<input type="radio" name="house-type" id="house-type1" value="casa" required>Casa
+					</label>
+
+					<label class="radio" for="house-type2">
+						<input type="radio" name="house-type" id="house-type2" value="apartamento" required>Apartamento
+					</label>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="box column is-8 is-offset-2">
+
+			<div class="field">
+				<label class="label" for="resume">Resumo do currículo:</label>
+				<div class="control">
+					<textarea class="textarea is-rounded" name="resume" id="resume" maxlength="1000" rows="5" required></textarea>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label" for="job">Cargo:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" max="40" required>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label" for="job-description">Descrição do cargo:</label>
+				<div class="control">
+					<textarea class="textarea is-rounded" name="job-description" id="job-description" maxlength="500" rows="5"
+						required></textarea>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label" for="date">Data de início</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="date" id="date" minlength="10" maxlength="10" required>
+				</div>
+			</div>
+
+			<button type="submit" id="submit-btn" class="button is-primary column is-medium is-3 is-offset-4">ENVIAR
+				FORMULARIO</button>
+		</div>
+	</form>
+	<!-- <div id="curriculo" class="curriculo">
+		btn limpar
+	</div> -->
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
