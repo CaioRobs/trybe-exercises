@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Flexbox - Flex Flow</title>
+	<title>Flexbox - Justify Content</title>
 	<style>
 		.box {
 			color: #9069EF;
@@ -14,37 +14,24 @@
 			height: 60px;
 			margin: 10px 5px;
 			text-align: center;
-			width: 30%;
+			width: 20%;
 		}
 
 		.box-container {
 			background-color: #0fa36b;
 			display: flex;
 			/* ADICIONE AQUI SEUS TESTES */
-
-			flex-direction: row-reverse;
-			/* row column reverse */
-
-			flex-wrap: nowrap;
-			/* wrap nowrap */
-
-			flex-flow: column-reverse nowrap;
+			/* este as possibilidades ( center , flex-start , flex-end , space-around e space-between ) */
 		}
 	</style>
 
 </head>
 
 <body>
-	<h2><a href="./justify-content.html">justify-content</a></h2>
-	<h2><a href="./align-items.html">align-items</a></h2>
-	<h2><a href="./align-content.html">align-content</a></h2>
-
 	<div class="box-container">
 		<div class="box">1</div>
 		<div class="box">2</div>
 		<div class="box">3</div>
-		<div class="box">4</div>
-		<div class="box">5</div>
 	</div>
 </body>
 
