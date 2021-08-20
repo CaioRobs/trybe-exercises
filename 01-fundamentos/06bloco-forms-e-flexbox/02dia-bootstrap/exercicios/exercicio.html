@@ -5,85 +5,117 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../bootstrap-5.1.0-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-
 	<title>Exercícios</title>
+
+	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="container is-fluid">
 	<form action="" method="get">
-		<div class="box input-container">
-			<fieldset>
-				<legend>Dados Pessoais</legend>
+		<div class="box column is-8 is-offset-2">
 
-				<label for="name">Nome:</label>
-				<input type="text" name="nome" id="name" placeholder="Digite seu nome" maxlength="40" required>
+			<div class="field">
+				<label class="label" for="name">Nome:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="nome" id="name" placeholder="Digite seu nome" maxlength="40"
+						required>
+				</div>
+			</div>
 
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email" placeholder="Digite seu email" maxlength="50" required>
+			<div class="field">
+				<label class="label" for="email">Email:</label>
+				<div class="control">
+					<input class="input is-rounded" type="email" name="email" id="email" placeholder="Digite seu email"
+						maxlength="50" required>
+				</div>
+			</div>
 
-				<label for="cpf">CPF:</label>
-				<input type="text" name="cpf" id="cpf" placeholder="Somente números" minlength="11" maxlength="11" required>
-				<!-- oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" -->
-			</fieldset>
+			<div class="field">
+				<label class="label" for="cpf">CPF:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="cpf" id="cpf" placeholder="Somente números" minlength="11"
+						maxlength="11" required>
+				</div>
+			</div>
 		</div>
 
-		<div class="box input-container">
-			<fieldset>
-				<legend>Residência</legend>
+		<div class="box column is-8 is-offset-2">
 
-				<label for="address">Endereço:</label>
-				<input type="text" name="address" id="address" maxlength="200" required>
-				<br>
+			<div class="field">
+				<label class="label" for="address">Endereço:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="address" id="address" maxlength="200" required>
+				</div>
+			</div>
 
-				<label for="city">Cidade:</label>
-				<input type="text" name="city" id="city" maxlength="28" required>
-				<br>
+			<div class="field">
+				<label class="label" for="city">Cidade:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="city" id="city" maxlength="28" required>
+				</div>
+			</div>
 
-				<label for="state">Estado:</label>
-				<select name="state" id="state" required>
-					<option value="invalid">Selecione...</option>
-				</select>
-				<br>
+			<div class="field">
+				<label class="label" for="state">Estado:</label>
+				<div class="control">
+					<div class="select is-rounded">
+						<select name="state" id="state" required>
+							<option value="invalid">Selecione...</option>
+						</select>
+					</div>
+				</div>
+			</div>
 
-				<div>
-					<label for="type1">
-						<input type="radio" name="type" id="type1" value="casa" required>Casa
+			<div class="field">
+				<div class="control">
+					<label class="radio" for="house-type1">
+						<input type="radio" name="house-type" id="house-type1" value="casa" required>Casa
 					</label>
-					<br>
-					<label for="type2">
-						<input type="radio" name="type" id="type2" value="apartamento" required>Apartamento
+
+					<label class="radio" for="house-type2">
+						<input type="radio" name="house-type" id="house-type2" value="apartamento" required>Apartamento
 					</label>
 				</div>
-			</fieldset>
+			</div>
+
 		</div>
 
-		<div class="box input-container">
-			<fieldset>
-				<legend>Resumo</legend>
+		<div class="box column is-8 is-offset-2">
 
-				<label for="resume">Resumo do currículo:</label>
-				<textarea name="resume" id="resume" maxlength="1000" rows="5" required></textarea>
+			<div class="field">
+				<label class="label" for="resume">Resumo do currículo:</label>
+				<div class="control">
+					<textarea class="textarea is-rounded" name="resume" id="resume" maxlength="1000" rows="5" required></textarea>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label" for="job">Cargo:</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" max="40" required>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label" for="job-description">Descrição do cargo:</label>
+				<div class="control">
+					<textarea class="textarea is-rounded" name="job-description" id="job-description" maxlength="500" rows="5"
+						required></textarea>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label" for="date">Data de início</label>
+				<div class="control">
+					<input class="input is-rounded" type="text" name="date" id="date" minlength="10" maxlength="10" required>
+				</div>
+			</div>
 
-				<label for="job">Cargo:</label>
-				<input type="text" max="40" required>
-
-				<label for="job-description">Descrição do cargo:</label>
-				<textarea name="job-description" id="job-description" maxlength="500" rows="5" required></textarea>
-
-				<label for="date">Data de início</label>
-				<input type="text" name="date" id="date" minlength="10" maxlength="10" required>
-
-			</fieldset>
-			<button type="submit" id="submit-btn" class="btn btn-success">ENVIAR FORMULARIO</button>
+			<button type="submit" id="submit-btn" class="button is-primary column is-medium is-3 is-offset-4">ENVIAR
+				FORMULARIO</button>
 		</div>
 	</form>
 	<!-- <div id="curriculo" class="curriculo">
 		btn limpar
 	</div> -->
 	<script src="../jquery-3.6.0.min.js"></script>
-	<script src="../bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
 </body>
 
