@@ -12,20 +12,26 @@ body {
 .header-container {
 	background-color: #5C687C;
 	display: flex;
+	flex-basis: 500px;
 }
 
 .logo-container {
 	display: flex;
 	justify-content: center;
+	flex-basis: 268px;
+	order: -1;
 }
 
 .menu-container {
 	display: flex;
+	flex-basis: 768px;
+	flex-grow: 1;
 }
 
 .menu-container ul {
 	display: flex;
 	justify-content: space-around;
+	align-self: center;
 	width: 100%;
 }
 
