@@ -1,6 +1,6 @@
 # Trybe - Exercícios
 
-Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/caiorvieira/)__ durante minha tragetória na Trybe. :rocket:
+Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/caiorrvieira/)__ durante minha tragetória na Trybe. :rocket:
 
 >"O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais."
 
