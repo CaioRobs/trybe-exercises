@@ -46,13 +46,13 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [x] 5.7 - (Bônus) Projeto - Carta Misteriosa
 
 ##### Bloco 6: [HTML e CSS: Forms, Flexbox e Responsivo]
-- [ ] 6.1 - HTML & CSS - Forms
-- [ ] 6.2 - Bibliotecas JavaScript e Frameworks CSS
-- [ ] 6.3 - Introdução - CSS Flexbox
-- [ ] 6.3 - CSS Flexbox - Parte 1
-- [ ] 6.4 - CSS Flexbox - Parte 2
-- [ ] 6.5 - CSS Responsivo - Mobile First
-- [ ] 6.6 - Projeto - Página inicial do Facebook
+- [x] 6.1 - HTML & CSS - Forms
+- [x] 6.2 - Bibliotecas JavaScript e Frameworks CSS
+- [x] 6.3 - Introdução - CSS Flexbox
+- [x] 6.3 - CSS Flexbox - Parte 1
+- [x] 6.4 - CSS Flexbox - Parte 2
+- [x] 6.5 - CSS Responsivo - Mobile First
+- [x] 6.6 - Projeto - Tribewarts
 
 ##### Bloco 7: [Introdução à JavaScript ES6 e Testes Unitários]
 - [ ] 7.1 - JavaScript ES6 - let, const, arrow functions e template literals
