@@ -4,6 +4,7 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	font-family: Raleway, sans-serif;
+	text-align: center;
 	justify-content: center;
 	overflow: hidden;
 	width: 100vw;
@@ -64,4 +65,32 @@ p strong {
 
 .card:nth-of-type(3) {
 	background-color: #41197f;
+}
+
+div:nth-of-type(3) {
+	display: block;
+}
+
+@media screen and (min-width: 500px) {
+	div:nth-of-type(1) {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+	div:nth-of-type(2) {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 650px) and (max-width: 950px) {
+	div:nth-of-type(3) {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	footer+p {
+		color: black !important
+	}
 }
