@@ -4,14 +4,20 @@
 // Crie uma função que receba um número e retorne seu fatorial.
 // Na matemática, o fatorial de um número não negativo N, com a notação N!, é o produto de todos os inteiros menores ou iguais a N.Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
 // Bônus(opcional): tente fazer o mesmo exercício de forma recursiva.Spoiler: É possível resolver com uma linha usando ternary operator.
+
+
 // Crie uma função que receba uma frase e retorne qual a maior palavra.
 // Exemplo:
 // 	Copiar
 // longestWord("Antônio foi no banheiro e não sabemos o que aconteceu") // retorna 'aconteceu'
+
+
 // Crie uma página que contenha:
 // 	Um botão ao qual será associado um event listener;
 // Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
 // Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
+
+
 // Crie um código JavaScript com a seguinte especificação:
 // 	Não se esqueça de usar template literals
 // Função 1: Escreva uma função que vai receber uma string como parâmetro.Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro.Sua função deve retornar essa nova string.
@@ -26,6 +32,9 @@
 // HTML;...#goTrybe ".
 
 
+const factorial = number => number > 0 ? number * factorial(number - 1) : 1;
+
+console.log(factorial(0))
 
 
 
