@@ -64,13 +64,6 @@ const books = [{
 
 const expectedResult = 'O Senhor dos Anéis';
 
-const authorWith3DotsOnName = () => books.find(book => {
-  let contador = 0;
-  book.author.name.split(' ').forEach(word => {
-    if (word.endsWith('.')) contador += 1;
-  })
-  if (contador >= 3) return true;
-  return false;
-}).name;
+const authorWith3DotsOnName = () => books.find(book => book.author.name.split(' ').filter(word => word.endsWith('.')).length === 3).name
 
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
