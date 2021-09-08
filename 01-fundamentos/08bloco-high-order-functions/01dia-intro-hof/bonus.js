@@ -24,30 +24,6 @@ const battleMembers = {
   dragon
 };
 
-const dragonDmg = (dragon) => {
-  const dragonMinDmg = 15;
-  return Math.floor(Math.random() * (dragon.strength - dragonMinDmg + 1)) + dragonMinDmg;
-}
-
-const warriorDmg = (warrior) => Math.floor(Math.random() * (warrior.strength * warrior.weaponDmg - warrior.strength + 1)) + warrior.strength;
-
-const mageDmgAndManaSpent = (mage) => {
-  const spellManaCost = 15;
-  let dmg;
-  let manaSpent;
-  if (mage.mana < spellManaCost) {
-    dmg = `out of mana`;
-    manaSpent = 0;
-  } else {
-    dmg = Math.floor(Math.random() * (mage.intelligence * 2 - mage.intelligence + 1)) + mage.intelligence;
-    manaSpent = spellManaCost;
-  }
-  return {
-    dmg,
-    manaSpent
-  }
-}
-
 const gameActions = {
   warriorTurn: (warrior, dragon, callback) => {
     if (warrior.healthPoints <= 0) return console.log('warrior esta morto')
@@ -80,9 +56,33 @@ const gameActions = {
 
 const turno = () => {
   console.table(battleMembers);
-  gameActions.warriorTurn(warrior, dragon, warriorDmg);
-  gameActions.mageTurn(mage, dragon, mageDmgAndManaSpent);
-  gameActions.dragonTurn(warrior, mage, dragon, dragonDmg);
+
+  gameActions.warriorTurn(warrior, dragon, (warrior) => {
+    return Math.floor(Math.random() * (warrior.strength * warrior.weaponDmg - warrior.strength + 1)) + warrior.strength;
+  });
+
+  gameActions.mageTurn(mage, dragon, (mage) => {
+    const spellManaCost = 15;
+    let dmg;
+    let manaSpent;
+    if (mage.mana < spellManaCost) {
+      dmg = `out of mana`;
+      manaSpent = 0;
+    } else {
+      dmg = Math.floor(Math.random() * (mage.intelligence * 2 - mage.intelligence + 1)) + mage.intelligence;
+      manaSpent = spellManaCost;
+    }
+    return {
+      dmg,
+      manaSpent
+    }
+  });
+
+  gameActions.dragonTurn(warrior, mage, dragon, (dragon) => {
+    const dragonMinDmg = 15;
+    return Math.floor(Math.random() * (dragon.strength - dragonMinDmg + 1)) + dragonMinDmg;
+  });
+
   console.table(battleMembers);
 }
 
