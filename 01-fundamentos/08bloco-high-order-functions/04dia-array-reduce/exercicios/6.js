@@ -10,7 +10,7 @@ const grades = [
 const studentAverages = () => {
   const averages = students.map((element, index) => ({
     name: element,
-    average: grades[index].reduce((acc, grade) => acc + grade, 0) / 5
+    average: grades[index].reduce((acc, grade) => acc + grade, 0) / grades.length
   }));
   return averages;
 }
