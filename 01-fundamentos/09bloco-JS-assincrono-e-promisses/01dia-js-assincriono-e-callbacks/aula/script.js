@@ -1,8 +1,46 @@
-setTimeout(() => {
-  console.log('Comprar parafusos') // Comprar parafusos
-  console.log('Adicionar ao estoque') // Adicionar ao estoque
-}, 2000);
+const jsonInfo = `{
+  "muitasEmpresasUsam": [
+    "Google",
+    "Twitter",
+    "Facebook",
+    "etc..."
+  ],
+  "temVariasVantagens": [
+    "Legível",
+    "Fácil de usar",
+    "Leve",
+    "Popular",
+    "Versátil"
+  ],
+  "muitasLinguagensDaoSuporte": [
+    "Python",
+    "C",
+    "C++",
+    "Java",
+    "PHP"
+  ]
+}`;
 
-console.log('1 - Receber roda'); // 1 - Receber roda
-console.log('2 - Encaixar parafusos'); // 2 - Encaixar parafusos
-console.log('3 - Fixar roda no carro'); // 3 - Fixar roda no carro
+const usoJSONPorque = JSON.parse(jsonInfo);
+
+const corporationsList = document.getElementById('corporations-used-by');
+const advantagesList = document.getElementById('advantages');
+const languagesList = document.getElementById('languages-used-by');
+
+usoJSONPorque.muitasEmpresasUsam.map((empresa) => {
+  const newLi = document.createElement('li');
+  newLi.innerText = empresa;
+  corporationsList.appendChild(newLi);
+});
+
+usoJSONPorque.temVariasVantagens.map((vantagens) => {
+  const newLi = document.createElement('li');
+  newLi.innerText = vantagens;
+  advantagesList.appendChild(newLi);
+});
+
+usoJSONPorque.muitasLinguagensDaoSuporte.map((linguagens) => {
+  const newLi = document.createElement('li');
+  newLi.innerText = linguagens;
+  languagesList.appendChild(newLi);
+});
