@@ -1,5 +1,7 @@
-const workDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-const weekDays = ['Sunday', ...workDays, 'Saturday'];
+const {
+  workDays,
+  weekDays
+} = require('../sources/notWeekday.js')
 
 test('Sunday is a week day', () => {
   expect(weekDays).toContain('Sunday');
