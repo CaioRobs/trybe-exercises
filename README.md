@@ -77,16 +77,16 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 
 ### Bloco 9: [JavaScript Assíncrono e Promises]
 
-- [ ] 9.1 - JavaScript Assíncrono e Callbacks
-- [ ] 9.2 - JavaScript Promises
-- [ ] 9.3 - Projeto - Carrinho de Compras
+- [x] 9.1 - JavaScript Assíncrono e Callbacks
+- [x] 9.2 - JavaScript Promises
+- [x] 9.3 - Projeto - Carrinho de Compras
 
 ### Bloco 10: [Testes automatizados com Jest]
 
-- [ ] 10.1 - Primeiros passos no Jest
-- [ ] 10.2 - Jest - Testes Assíncronos
-- [ ] 10.3 - Jest - Simulando comportamentos
-- [ ] 10.4 - Projeto - Jest Assíncrono e Mocking
+- [x] 10.1 - Primeiros passos no Jest
+- [x] 10.2 - Jest - Testes Assíncronos
+- [x] 10.3 - Jest - Simulando comportamentos
+- [x] 10.4 - Projeto - Jest Assíncrono e Mocking
 
 ## Desenvolvimento Front-end
 
