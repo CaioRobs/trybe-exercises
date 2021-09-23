@@ -3,7 +3,7 @@ const sleep = (ms) => {
 };
 
 const somar = async (a, b) => {
-  await sleep(2000);
+  await sleep(1000);
   return a + b
 }; // Função de somar mais lenta do mundo
 const subtrair = (a, b) => a - b;

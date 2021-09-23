@@ -1,10 +1,10 @@
 const math = require('../src/math');
 
-test("#somar", () => {
+test("#somar", async () => {
   // testando a implementação original, o mock e a restauração da função original
 
   // implementação original
-  expect(math.somar(1, 2)).resolves.toBe(3);
+  await expect(math.somar(1, 2)).resolves.toBe(3);
 
   // criando o mock e substituindo a implementação para uma subtração
   const mockSomar = jest
@@ -19,5 +19,5 @@ test("#somar", () => {
 
   // restaurando a implementação original
   math.somar.mockRestore();
-  expect(math.somar(1, 2)).resolves.toBe(3);
+  await expect(math.somar(1, 2)).resolves.toBe(3);
 });
