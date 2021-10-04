@@ -10,7 +10,7 @@ class Title extends Component {
 
 
 class Name extends Component {
-  render() {
+  render() { 
     return (
      <h2>
        Caio R R Vieira
@@ -23,7 +23,7 @@ class Description extends Component {
   render() {
     return (
       <p>
-        Sou estudante de WEB DEV, estudando React
+        Sou estudante de WEB DEV, estudando React!
       </p>
     )
   }
