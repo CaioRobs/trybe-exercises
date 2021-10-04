@@ -1,9 +1,13 @@
 import './App.css';
-import Component from './Component.js';
+import { Title, Name, Description } from './Component.js';
 
 function App() {
   return (
-    <Component />
+  <div>
+    <Title />
+    <Name />
+    <Description />
+  </div>
   );
 }
 
