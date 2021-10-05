@@ -27,7 +27,7 @@ export default class Content extends Component {
   render() {
     return (
       <section className='card-section'>
-        {conteudos.map((tarefa, index) => (
+        {conteudos.map((tarefa) => (
           <div
             key= {tarefa.conteudo}
             className='card'
