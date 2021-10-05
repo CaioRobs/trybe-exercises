@@ -29,7 +29,7 @@ export default class Content extends Component {
       <section className='card-section'>
         {conteudos.map((tarefa, index) => (
           <div
-            key= {index}
+            key= {tarefa.conteudo}
             className='card'
           >
             <p>O conteúdo é: {tarefa.conteudo}</p>
