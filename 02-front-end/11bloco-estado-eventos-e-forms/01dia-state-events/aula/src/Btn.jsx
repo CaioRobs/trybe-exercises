@@ -5,17 +5,24 @@ export default class Btn extends Component {
     super();
 
     this.state = {
-      clicksNumber: 0
+      clicksNumber: 0,
     }
 
     this.handleBtnClick = this.handleBtnClick.bind(this)
   }
 
-  handleBtnClick() {
-    console.log(this.props.name)
-    this.setState((previousState, _props) => ({
-      clicksNumber: previousState.clicksNumber + 1
-    }))
+  handleBtnClick(event) {
+    // this.setState((previousState, _props) => (newState))
+    this.setState((previous, _props) => {
+      if (previous.clicksNumber % 2 !== 0) {
+        event.target.style.backgroundColor = 'red'
+      } else {
+        event.target.style.backgroundColor = 'whitesmoke'
+      }
+      return ({
+          clicksNumber: previous.clicksNumber + 1
+      })
+    })
   }
 
   render() {
