@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+}
+
+.pokemon {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 auto;
+  min-width: 25%;
+  margin: 10px 10px;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  border-radius: 10px;
+}
+
