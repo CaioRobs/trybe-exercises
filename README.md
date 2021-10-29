@@ -1,8 +1,8 @@
 # Trybe - Exercícios
 
-Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/caiorrvieira/)__ durante minha tragetória na Trybe. :rocket:
+Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/in/caiorrvieira/)** durante minha tragetória na Trybe. :rocket:
 
->"O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais."
+> "O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais."
 
 ## Fundamentos do Desenvolvimento Web
 
@@ -15,7 +15,7 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 
 ### Bloco 2: [Git, GitHub e Internet](https://github.com/CaioRobs/trybe_exercises/tree/master/01_fundamentos/02bloco_gitHub_internet)
 
-- [x] 2.1 - Git & GitHub  - O que é e para que serve
+- [x] 2.1 - Git & GitHub - O que é e para que serve
 - [x] 2.2 - Git & GitHub - Entendendo os comandos
 - [x] 2.3 - Internet - Entendendo como ela funciona
 
@@ -60,14 +60,14 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [x] 6.5 - CSS Responsivo - Mobile First
 - [x] 6.6 - Projeto - Tribewarts
 
-### Bloco 7: [Introdução à JavaScript ES6 e Testes Unitários]
+### Bloco 7: [Introdução à JavaScript ES6 e Testes Unitários](https://github.com/CaioRobs/trybe-exercises/tree/master/01-fundamentos/07bloco-JS-ES6-testes-unitarios)
 
 - [x] 7.1 - JavaScript ES6 - let, const, arrow functions e template literals
 - [x] 7.2 - JavaScript ES6 - Objects
 - [x] 7.3 - Testes unitários em JavaScript - Jest
 - [x] 7.4 - Projeto - JavaScript Testes Unitários
 
-### Bloco 8: [Higher Order Functions do JavaScript ES6]
+### Bloco 8: [Higher Order Functions do JavaScript ES6](https://github.com/CaioRobs/trybe-exercises/tree/master/01-fundamentos/08bloco-high-order-functions)
 
 - [x] 8.1 - JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
 - [x] 8.2 - JavaScript ES6 - Higher Order Functions - map e filter
@@ -75,7 +75,7 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [x] 8.4 - JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 - [x] 8.5 - Projeto - Zoo functions
 
-### Bloco 9: [JavaScript Assíncrono e Promises]
+### Bloco 9: [JavaScript Assíncrono e Promises](https://github.com/CaioRobs/trybe-exercises/tree/master/01-fundamentos/09bloco-JS-assincrono-e-promisses)
 
 - [x] 9.1 - JavaScript Assíncrono e Callbacks
 - [x] 9.2 - JavaScript Promises
@@ -84,29 +84,29 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 
 ## Desenvolvimento Front-end
 
-### Bloco 10: [Introdução à React]
+### Bloco 10: [Introdução à React](https://github.com/CaioRobs/trybe-exercises/tree/master/02-front-end/10bloco-react-intro)
 
 - [x] 10.1 - Introdução - React
 - [x] 10.1 - 'Hello, world!' no React!
 - [x] 10.2 - Componentes React
 - [x] 10.3 - Projeto - Movie Cards Library
 
-### Bloco 11: [Componentes com Estado, Eventos e Formulários com React]
+### Bloco 11: [Componentes com Estado, Eventos e Formulários com React](https://github.com/CaioRobs/trybe-exercises/tree/master/02-front-end/11bloco-estado-eventos-e-forms)
 
 - [x] 11.1 - Componentes com estado e eventos
 - [x] 11.2 - Formulários no React
 - [x] 11.3 - Projeto - Tryunfo
 
-### Bloco 12: [Ciclo de Vida de Componentes e React Router]
+### Bloco 12: [Ciclo de Vida de Componentes e React Router](https://github.com/CaioRobs/trybe-exercises/tree/master/02-front-end/12bloco-ciclo-de-vida)
 
 - [x] 12.1 - Ciclo de vida de componentes
 - [x] 12.2 - React Router
 - [x] 12.3 - Projeto - TrybeTunes
 
-### Bloco 13: [Metodologias Ágeis]
+### Bloco 13: Metodologias Ágeis
 
-- [ ] 13.1 - Metodologias Ágeis
-- [ ] 13.2 - Projeto - Frontend Online Store
+- [x] 13.1 - Metodologias Ágeis
+- [x] 13.2 - Projeto - Frontend Online Store
 
 ### Bloco 14: [Testes automatizados com React Testing Library]
 
