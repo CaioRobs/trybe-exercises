@@ -1,6 +1,6 @@
-Esse é um projeto para o conteúdo de `React Router Dom`.
+# Esse é um projeto para o conteúdo de `React Router Dom`
 
-### Antes de iniciar
+## Antes de iniciar
 
 Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
 
@@ -22,7 +22,7 @@ Após a solução dos exercícios, abra um PR no seu repositório forkado e, se 
 
 ![PR do exercício](images/example-pr.png)
 
-É necessário realizar uma mudança. Clique no *base repository* como na imagem abaixo:
+É necessário realizar uma mudança. Clique no _base repository_ como na imagem abaixo:
 
 ![Mudando a base do repositório](images/change-base.png)
 
@@ -62,13 +62,13 @@ Por fim, adicione uma rota que mapeie o caminho de _URL_ "/users" para o compone
 
 Agora que as rotas, adicione dentro de `BrowserRouter` uma lista contendo 3 links:
 
-  * um link que aponte para o caminho de _URL_ "/" contendo o texto `Home`;
+- um link que aponte para o caminho de _URL_ "/" contendo o texto `Home`;
 
-  * um link que aponte para o caminho de _URL_ "/about" contendo o texto `About`;
+- um link que aponte para o caminho de _URL_ "/about" contendo o texto `About`;
 
-  * um link que aponte para o caminho de _URL_ "/users" contendo o texto `Users`.
+- um link que aponte para o caminho de _URL_ "/users" contendo o texto `Users`.
 
-    *OBS*: averigue que os links estão atualizando a _URL_ do seu browser quando são clicados.
+  _OBS_: averigue que os links estão atualizando a _URL_ do seu browser quando são clicados.
 
 #### Exercício 7
 
@@ -76,22 +76,21 @@ Altere o componente `Users` para poder fazer o exercício a seguir.
 
 ```js
 // arquivo Users.js
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Users extends Component {
   render() {
-    const { greetingsMessage } = this.props
+    const { greetingsMessage } = this.props;
     return (
       <div>
         <h2>Users</h2>
-        <p> { greetingsMessage }, My awesome Users component </p>
+        <p> {greetingsMessage}, My awesome Users component </p>
       </div>
     );
   }
-};
+}
 
 export default Users;
-
 ```
 
 #### Exercício 8
