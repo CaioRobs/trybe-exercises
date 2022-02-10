@@ -108,14 +108,14 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 - [x] 13.1 - Metodologias Ágeis
 - [x] 13.2 - Projeto - Frontend Online Store
 
-### Bloco 14: [Testes automatizados com React Testing Library]
+### Bloco 14: Testes automatizados com React Testing Library
 
 - [x] 14.1 - RTL - Primeiros passos
 - [x] 14.2 - RTL - Mocks e Inputs
 - [x] 14.3 - RTL - Testando React Router
 - [x] 14.4 - Projeto - Testes em React
 
-### Bloco 15: [Gerenciamento de estado com Redux]
+### Bloco 15: Gerenciamento de estado com Redux
 
 - [x] 15.1 - Introdução ao Redux - O estado global da aplicação
 - [x] 15.2 - Usando o Redux no React
@@ -128,7 +128,7 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 
 - [x] 16.1 - Projeto - Jogo de Trivia
 
-### Bloco 17: [Context API e React Hooks]
+### Bloco 17: Context API e React Hooks
 
 - [x] 17.1 - Context API do React
 - [x] 17.2 - React Hooks - useState e useContext
@@ -149,7 +149,7 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 - [x] 19.3 - Orquestrando containers com Docker Compose
 - [x] 19.4 - Projeto Docker Todo-List
 
-### Bloco 20: [Introdução à SQL]
+### Bloco 20: Introdução à SQL
 
 - [x] 20.1 - Introdução - Bancos de dados relacionais
 - [x] 20.1 - Banco de dados SQL
@@ -158,14 +158,14 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 - [x] 20.4 - Manipulando tabelas
 - [x] 20.5 - Projeto - All For One
 
-### Bloco 21: [Funções SQL, Joins e Subqueries]
+### Bloco 21: Funções SQL, Joins e Subqueries
 
 - [x] 21.1 - Funções mais usadas no SQL
 - [x] 21.2 - Descomplicando JOINs e UNIONs
 - [x] 21.3 - Transformando ideias em um modelo de banco de dados
 - [x] 21.4 - Projeto - One For All
 
-### Bloco 22: [Introdução ao desenvolvimento Web com NodeJS]
+### Bloco 22: Introdução ao desenvolvimento Web com NodeJS
 
 - [x] 22.1 - Intro - NodeJS
 - [x] 22.1 - NodeJS - Introdução
@@ -175,7 +175,7 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 - [x] 22.5 - Express: Middlewares
 - [x] 22.6 - Projeto - Talker manager
 
-### Bloco 23: [NodeJS: Camada de Serviço e Arquitetura Rest e Restful]
+### Bloco 23: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
 
 - [ ] 23.1 - Introdução - Arquitetura de Software
 - [ ] 23.1 - Arquitetura de Software - Camada de Model
@@ -184,7 +184,7 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 - [ ] 23.4 - Arquitetura de Software - Testando as Camadas
 - [ ] 23.5 - Projeto - Store Manager
 
-### Bloco 24: [NodeJS: ORM e Autenticação]
+### Bloco 24: NodeJS: ORM e Autenticação
 
 - [ ] 23.1 - Introdução - Node.js: ORM e Autenticação
 - [ ] 23.1 - ORM - Interface da aplicação com o banco de dados
@@ -206,7 +206,7 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 
 ### Bloco 28: Projeto Trybe Futebol Clube
 
-### Bloco 29: [Introdução ao MongoDB]
+### Bloco 29: Introdução ao MongoDB
 
 - [ ] 29.1 - Introdução - NoSQL
 - [ ] 29.1 - MongoDB - Introdução
