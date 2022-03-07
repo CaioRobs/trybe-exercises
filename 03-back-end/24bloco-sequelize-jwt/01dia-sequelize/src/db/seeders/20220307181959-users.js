@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         first_name: "Eduardo",
-        lastName: "Silva",
+        last_name: "Silva",
         email: "edu@test.com",
         created_at: Sequelize.literal("CURRENT_TIMESTAMP"),
         updated_at: Sequelize.literal("CURRENT_TIMESTAMP"),
