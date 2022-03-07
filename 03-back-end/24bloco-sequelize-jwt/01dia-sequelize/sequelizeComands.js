@@ -1,4 +1,4 @@
-const { User } = require("./models");
+const { User } = require("./src/models");
 
 const addLastName = async (lastName) => {
   await User.update(
