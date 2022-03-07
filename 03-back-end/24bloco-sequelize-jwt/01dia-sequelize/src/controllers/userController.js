@@ -1,5 +1,8 @@
 const express = require("express");
+
 const { User } = require("../models");
+
+const route = "/users";
 const router = express.Router();
 
 // Este endpoint usa o método findAll do Sequelize para retorno todos os users.
@@ -100,4 +103,6 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = (app) => {
+  app.use(route, router);
+};
