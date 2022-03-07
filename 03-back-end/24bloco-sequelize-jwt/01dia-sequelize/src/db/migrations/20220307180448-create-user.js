@@ -10,9 +10,11 @@ module.exports = {
       },
       firstName: {
         type: Sequelize.STRING,
+        field: "first_name",
       },
       lastName: {
         type: Sequelize.STRING,
+        field: "last_name",
       },
       email: {
         type: Sequelize.STRING,
@@ -20,10 +22,12 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
+        field: "created_at",
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
+        field: "updated_at",
       },
     });
   },

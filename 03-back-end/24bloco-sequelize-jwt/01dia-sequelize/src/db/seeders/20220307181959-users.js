@@ -13,18 +13,18 @@ module.exports = {
      */
     const data = [
       {
-        firstName: "Leonardo",
+        first_name: "Leonardo",
         email: "leo@test.com",
         phone_num: "61984343456",
-        createdAt: Sequelize.literal("CURRENT_TIMESTAMP"),
-        updatedAt: Sequelize.literal("CURRENT_TIMESTAMP"),
+        created_at: Sequelize.literal("CURRENT_TIMESTAMP"),
+        updated_at: Sequelize.literal("CURRENT_TIMESTAMP"),
       },
       {
-        firstName: "Eduardo",
+        first_name: "Eduardo",
         lastName: "Silva",
         email: "edu@test.com",
-        createdAt: Sequelize.literal("CURRENT_TIMESTAMP"),
-        updatedAt: Sequelize.literal("CURRENT_TIMESTAMP"),
+        created_at: Sequelize.literal("CURRENT_TIMESTAMP"),
+        updated_at: Sequelize.literal("CURRENT_TIMESTAMP"),
       },
     ];
 
